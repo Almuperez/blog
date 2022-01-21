@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+
+<div class="row" style="margin-top:50px">
+  {{#each entry}}
+    {{#with this}}
+      <div class="col-8">{{title}}</div>
+    {{/with}}
+  {{/each}}
+</div>
+{{#if entry.length}}
+  <h3>Hay {{entry.length}} entry.</h3>
+
+{{else}}
+  <img
+    src="https://media0.giphy.com/media/l4EoMN9qjAOaaAcNO/200.webp?cid=ecf05e4792c60qrrbtrug3fcpokrb83bhjrf6p2jx0gw5e7h&rid=200.webp&ct=g"
+    alt="Inactive"
+  />
+{{/if}}
