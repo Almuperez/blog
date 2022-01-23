@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "parcel serve -p $PORT.html",
+    "start": "node dist/server.js",
     "dev": "ts-node-dev src/server.ts",
     "build": "tsc",
     "seed": "ts-node-dev src/seed.ts"
